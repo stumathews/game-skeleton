@@ -13,6 +13,8 @@ find_package(SDL2_ttf REQUIRED)
 find_package(SDL2_ttf CONFIG REQUIRED)
 find_package(SDL2_mixer REQUIRED)
 find_package(SDL2_image REQUIRED)
+find_package(tinyxml2 CONFIG REQUIRED)
+find_package(Lua REQUIRED)
 
 add_executable(game main.cpp)
 
@@ -26,6 +28,7 @@ PRIVATE
     winmm
     wsock32
     ws2_32    
+    tinyxml2::tinyxml2
     cppgamelib::cppgamelib
 )
 

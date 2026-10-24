@@ -66,7 +66,7 @@ int main(int, char* [])
 	}));
 
 	// 4. Initialize the game infrastructure, providing window dimensions, title, and resource configuration
-	infrastructure.Initialize(500, 400, "Skeleton", "conf\\Resources.xml","conf\\");
+	infrastructure.Initialize(500, 400, "Skeleton", "conf\\Resources.xml","conf\\", false);
 
 	// 5. Start game loop - the game loop will run until gameWorldData.IsGameDone is set to true
 	infrastructure.DoGameLoop(&gameWorldData);
