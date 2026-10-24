@@ -1,0 +1,32 @@
+# Build output
+build/
+cmake-build-*/
+out/
+Debug/
+Release/
+x64/
+x86/
+
+# Visual Studio
+.vs/
+*.sln
+*.vcxproj*
+*.user
+
+# Compiled files
+*.obj
+*.o
+*.exe
+*.dll
+*.lib
+*.pdb
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+
+# Dependencies and secrets
+.env

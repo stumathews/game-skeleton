@@ -1,0 +1,30 @@
+<!-- Required settings for the game engine -->
+<settings>
+	<global>
+		<setting name="verbose" type="bool">false</setting>
+		<setting name="isNetworkGame" type="bool">true</setting>
+	</global>
+
+	<gameStructure>
+		<setting name="sampleInput" type="bool" description="sampleInput">true</setting>
+		<setting name="sampleNetwork" type="bool" description="sampleNetwork">true</setting>
+	</gameStructure>
+
+	<eventManager>
+		<setting name="logEvents" type="bool">true</setting>
+	</eventManager>
+
+	<!-- networking ignored if global.isNetworkGame is false -->
+	<networking>
+		<setting name="isGameServer" type="bool">false</setting>
+		<setting name="gameServerAddress" type="string">192.168.1.171</setting>
+		<setting name="gameServerPort" type="string">9090</setting>
+		<setting name="maxPlayers" type="int">4</setting>
+		<setting name="nickname" type="string">Surface4</setting>	
+		<setting name="isTcp" type="bool">false</setting>
+		<setting name="useReliableUdp" type="bool">true</setting>
+		<setting name="useEncryption" type="bool">true</setting>
+		<setting name="encoding" type="int">3</setting><!-- 1=Json, 2=Xml, 3=BitPacked -->
+		<setting name="sendClientEventsToServer" type="bool">false</setting>
+	</networking>	
+</settings>

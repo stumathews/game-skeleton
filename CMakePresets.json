@@ -1,0 +1,42 @@
+{
+  "version": 2,
+  "configurePresets": [
+    {
+      "name": "windows",
+      "generator" : "Visual Studio 18 2026",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+	"MAKE_BUILD_TYPE" : "Debug"
+      }
+    },
+    {
+      "name": "linux",
+      "generator" : "Ninja",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
+      }
+    },
+    {
+      "name": "release",
+      "generator" : "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "MAKE_BUILD_TYPE" : "Release"
+      }
+    }
+    ,
+    {
+      "name": "RelWithDebInfo",
+      "generator" : "Visual Studio 17 2022",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+        "MAKE_BUILD_TYPE" : "RelWithDebInfo"
+      }
+    }
+
+  ]
+}
