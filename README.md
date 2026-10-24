@@ -1,4 +1,4 @@
-# Minimalist Game using CppgameLib
+# Game Skeleton
 
 This project demonstrates how to use the CppGameLib library to create a minimalist game environment that runs at 60FPS.
 This is a CMake project that will automatically download the CppGameLib library and its dependencies, links and builds the game.
